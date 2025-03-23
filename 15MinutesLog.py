@@ -28,7 +28,7 @@ def track_time():
         print(f"Logged: {activity} at {datetime.now().strftime('%H:%M:%S')}")
 
 # Schedule to run every 15 minutes
-schedule.every(1).minutes.do(track_time)
+schedule.every(15).minutes.do(track_time)
 
 print("Time Tracker is running... Press Ctrl+C to stop.")
 try:
